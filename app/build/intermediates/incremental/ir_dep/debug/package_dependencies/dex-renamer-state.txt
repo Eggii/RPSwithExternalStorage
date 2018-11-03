@@ -1,0 +1,4 @@
+#Sat Nov 03 10:13:20 EET 2018
+base.0=/home/eggii/AndroidStudioProjects/RPS/app/build/intermediates/transforms/dexMerger/debug/10
+path.0=classes.dex
+renamed.0=classes.dex

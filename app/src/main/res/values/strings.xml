@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="enter_name">Enter name</string>
+    <string name="Play">Play</string>
+    <string name="pause">pause</string>
+    <string name="score">SCORE</string>
+</resources>

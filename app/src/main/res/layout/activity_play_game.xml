@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGame"
+    android:background="@drawable/bg_play">
+
+    <ImageView
+        android:id="@+id/iv_user_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:id="@+id/iv_cpu_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txt_userPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingStart="16dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/txt_cpuPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_pause">
+
+        <ImageButton
+            android:id="@+id/btn_rock"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/rock"
+            android:scaleType="fitCenter"
+            android:background="@color/colorNone"/>
+
+        <ImageButton
+            android:id="@+id/btn_paper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/paper"
+            android:background="@color/colorNone"/>
+
+        <ImageButton
+            android:id="@+id/btn_scissors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scissors"
+            android:background="@color/colorNone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/pause"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
